@@ -1,0 +1,59 @@
+_________________
+Bluetooth,a wireless technology standard,is designed for transferring data over short distances from fixed and mobile devices.
+it works by establishing PAN using radio frequencies in the ISM band 2.402 GHz to 2.480 GHz.
+Conceived as a wireless alternative to RS-232 data cables.
+
+_________________
+Bluetooth devices form a network known as a piconet.
+
+Multiple piconet can interact to form a large network known as a scatternet.
+
+_________________
+Bluetooth specification indentifies 2 types of links for data transfer:
+
+1.Synchronous Connection-Oriented(SCO) Links:
+
+Primalrily used for audio communication,these links reserve slots at regular intervals for data transmission,communication etc.
+
+2.ASynchronous Connection-Less(ACL) Links:
+
+These links cater to transmitting all other types of data.
+transmit data whenever bandwidth allows.
+
+_________________
+Risks of Bluetooth:
+
+the array of risks associated with Bluetooth can be broadly classified into several Categories:
+
+1.Unauthorised Access
+
+2.Data Theft
+
+3.Interference
+
+4.Denial of Service(Dos)
+
+5.Device Tracking
+
+_________________
+Bluetooth Attacks:
+
+Bluejacking: Sends unsolicated messages
+
+Bluesnarfing: Unauthorised Access to a bluetooth-enabled device's data.
+
+Bluebugging: contol a Bluetooth device.
+
+Car Wisperer: specifically targets vehicles.
+
+Bluesmacking & Dos: disrupt or disable the connection between devices.
+
+MITM: possition themselves between the communicating devices.
+
+BlueBorne: Control of a device without requireing any user interaction or device pairing.
+
+Key Extraction: retrieve encryption keys.
+
+Eavesdropping: Intercepting and listening to bluetooth communications.
+
+Bluetooth Impersonation Attack: Impersonate a trusted Bluetooth device.

@@ -1,0 +1,12 @@
+This section serves as a quick refresher on networking and how some standard protocols we can see while performing traffic captures work.
+
+______________________________________
+
+Model           Traits                          Comparison.
+Trait	        OSI	                            TCP-IP
+Layers	        Seven	                        Four
+Flexibility	    Strict	                        Loose
+Dependency	    Protocol independent & generic	Based on common communication protocols
+
+______________________________________
+

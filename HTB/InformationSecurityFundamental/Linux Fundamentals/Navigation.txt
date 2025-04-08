@@ -1,0 +1,13 @@
+ls -l 
+
+drwxr-xr-x 2 cry0l1t3 htbacademy 4096 Nov 13 17:37 Desktop
+
+Description of above :
+
+drwxr-xr-x   -> type and permissions 
+2            -> Number of hard links to the file/directory
+cry0l1t3     -> Owner of the file/Dir 
+htbacademy   -> Group owner of the file/Dir
+4096         -> Size of the file or the number of blocks used to store the dir info
+Nov 13 17:37 -> Date and time 
+Desktop      -> Dir name

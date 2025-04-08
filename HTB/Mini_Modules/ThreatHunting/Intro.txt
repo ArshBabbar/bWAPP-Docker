@@ -1,0 +1,86 @@
+Threat hunting is an active, human-led, and often hypothesis-driven practice that systematically combs through network data to identify stealthy, advanced threats that evade existing security solutions.
+
+____________________________
+
+
+Key facets of threat hunting include:
+
+An offensive, proactive strategy that prioritizes threat anticipation over reaction, based on hypotheses, attacker TTPs, and intelligence.
+An offensive, reactive response that searches across the network for artifacts related to a verified incident, based on evidence and intelligence.
+A solid, practical comprehension of threat landscape, cyber threats, adversarial TTPs, and the cyber kill chain.
+Cognitive empathy with the attacker, fostering an understanding of the adversarial mindset.
+A profound knowledge of the organization's IT environment, network topology, digital assets, and normal activity.
+Utilization of high-fidelity data and tactical analytics, and leveraging advanced threat hunting tools and platforms.
+
+____________________________
+
+The Relationship Between Incident Handling & Threat Hunting:
+
+In the Preparation phase of incident handling, a threat hunting team must set up robust, clear rules of engagement. 
+
+During the Detection & Analysis phase of incident handling, a threat hunter’s acumen is indispensable.
+
+In the Containment, Eradication, and Recovery phase of incident handling, the role of a hunter can be diverse. Some organizations might expect hunters to perform tasks within the Containment, Eradication, and Recovery stages. However, this is not a universally accepted practice.
+The specific roles and responsibilities of the hunting team will be stipulated in the procedural documents and security policies.
+
+____________________________
+
+A Threat Hunting Team's Structure:
+
+Threat Hunter:
+
+The core role within the team, threat hunters are cybersecurity professionals with a deep understanding of the threat landscape, cyber adversaries' Tactics, Techniques, and Procedures (TTPs), and sophisticated threat detection methodologies.
+They proactively search for Indicators of Compromise (IoCs) and are proficient in using a variety of threat hunting tools and platforms.
+
+Threat Intelligence Analyst:
+
+These individuals are responsible for gathering and analyzing data from a variety of sources, including open-source intelligence, dark web intelligence, industry reports, and threat feeds.
+Their job is to understand the current threat landscape and predict future trends, providing valuable insights to threat hunters.
+
+Incident Responders:
+
+When threat hunters identify potential threats, incident responders step in to manage the situation.
+They investigate the incident thoroughly and they are also responsible for containment, eradication, and recovery actions, and they ensure that the organization can quickly resume normal operations.
+
+Forensics Experts: These are the team members who delve deep into the technical details of an incident. They are proficient in digital forensics and incident response (DFIR), capable of analyzing malware, reverse engineering attacks, and providing detailed incident reports.
+
+Data Analysts/Scientists: They play a pivotal role in examining large datasets, using statistical models, machine learning algorithms, and data mining techniques to uncover patterns, correlations, and trends that can lead to actionable insights for threat hunters.
+
+Security Engineers/Architects: Security engineers are responsible for the overall design of the organization's security infrastructure. They ensure that all systems, applications, and networks are designed with security in mind, and they often work closely with threat hunters to implement tools and techniques that facilitate threat hunting, as well as kill-chain defenses.
+
+Network Security Analyst: These professionals specialize in network behavior and traffic patterns. They understand the normal ebb and flow of network activity and can quickly identify anomalies indicative of a potential security breach.
+
+SOC Manager: The Security Operations Center (SOC) manager oversees the operations of the threat hunting team, ensuring smooth coordination among team members and effective communication with the rest of the organization.
+
+____________________________
+
+When Should We Hunt?
+
+When New Information on an Adversary or Vulnerability Comes to Light
+
+When New Indicators are Associated with a Known Adversary
+
+When Multiple Network Anomalies are Detected
+
+During an Incident Response Activity
+
+Periodic Proactive Actions
+
+____________________________
+
+The Relationship Between Risk Assessment & Threat Hunting:
+
+In the threat hunting process, the information gleaned from a thorough risk assessment can guide our activities in several ways:
+
+Prioritizing Hunting Efforts: By recognizing the most critical assets (often referred to as 'crown jewels') and their associated risks, we can prioritize our threat hunting efforts on these areas. Assets could include sensitive data repositories, mission-critical applications, or key network infrastructure.
+
+Understanding Threat Landscape: The threat identification step of the risk assessment allows us to understand the threat landscape better, including the Tactics, Techniques, and Procedures (TTPs) used by potential threat actors. This understanding assists us in developing our hunting hypotheses, which are essential for proactive threat hunting.
+
+Highlighting Vulnerabilities: Risk assessment helps to highlight vulnerabilities in our systems, applications, and processes. Knowing these weaknesses enables us to look for exploitation indicators in these areas. For instance, if we know a particular application has a vulnerability that allows for privilege escalation, we can look for anomalies in user privilege levels.
+
+Informing the Use of Threat Intelligence: Threat intelligence is often used in threat hunting to identify patterns of malicious behavior. Risk assessment helps inform the application of threat intelligence by identifying the most likely threat actors and their preferred methods of attack.
+
+Refining Incident Response Plans: Risk assessment also plays a critical role in refining Incident Response (IR) plans. Understanding the likely risks helps us anticipate and plan for potential breaches, ensuring a swift and effective response.
+
+Enhancing Cybersecurity Controls: Lastly, the risk mitigation strategies derived from risk assessment can directly feed into enhancing existing cybersecurity controls and defenses, further strengthening the organization’s security posture.
+

@@ -1,0 +1,24 @@
+Kerberos is the default authentication protocol for domain accounts since Windows 2000
+it is an open standard and allows for interoperability with other systems using the same standard.
+when a user logs into their PC,Kerberos is used to authenticate them via mutal authentiaction or both the user and the server verify their identity.
+it is a stateless authentication protocol based on tickets instead of transmitting user passwords over the network.
+as part of AD DS, DC have a Kerberos Key DIstribution Center(KDC) that issues tickets.
+|when a user initiates a login request to a system,the client they are using to authenticate request a ticket from the KDC
+|encrypting the request with the user's password.
+if the KDC can decrypt the request(AS-REQ) using their password,it will create a Ticket Granting Ticket(TGT) and transmit it to the user.
+the user then presents its TGT to a DC to request a Ticket Granting Service(TGS) ticket,encrypted with the associated service's NTLM password hash.
+|Finally,the client requests access to the required service by oresenting the TGS to the application or service,which decrypts it with its password hash.
+|if the entire process completes appropriately,the user will be permitted to access the requested service or app.
+
+The KDC does not record previous transactions.
+instead TGS relies on a valid TGT 
+
+Working 
+
+1. Client Request TGT                                   ----->
+2. (Kerberos service)KDC receive TGT                    <-----
+3. presents TGT and Req TGS                             ----->
+4. rec TGS                                              <-----
+5.client presents TGS for service access to database    ----->
+
+Uses port 88(both TCP and UDP)

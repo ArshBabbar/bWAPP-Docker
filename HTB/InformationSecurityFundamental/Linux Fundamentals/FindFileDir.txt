@@ -1,0 +1,21 @@
+commands used to Find Files and Directories
+
+Which <name>
+Locate <name>
+|    find <location> <options>\
+|    example:-
+|   find -name *.conf -user root -size +20k -newermt 2020-03-03 -exec ls -al {} \; 2>/dev/null
+|   
+|    Explanation:
+|    -type -> the type of file
+|    -name -> name of file
+|    -user -> all users that own the file
+|    -newermt -> all files made after particular Date
+|    -exec -> execute a particulare command 
+|    2>dev/null -> sends error to /dev/null
+
+Detailed info about the -exec<option> :
+
+Using the curly brackets as placeholders for each result
+The backslash escapes the next character from being interpreted by the shell
+because otherwise, the semicolon would terminate the command and not reach the redirection.

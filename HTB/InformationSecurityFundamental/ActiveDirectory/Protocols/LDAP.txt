@@ -1,0 +1,23 @@
+AD supports Lightweight directory access protocol for directory lookups.
+LDAP is an open source and cross-platform protocol used for authentication against various directory servies.
+LDAP uses port 389 and LDAP over ssh uses port 636
+
+LDAP is the language that applications use to communicate with other services that proviedes directory services.
+IN other words,LDAP is how system in the network env can "speak" to AD.
+
+AN LDAP session begins by first connection to an LDAP server,also known as Directory System Agent.
+THE DC in AD avtively listens for LDAP requests,such as security authentication requests.
+
+--- AD LDAP AUTHENTICATION ----
+
+LDAP is set up to authenticate credentials against AD using a "BIND" operation to set the authentication state for an LDAP session.
+2 types of LDAP authentications are:
+
+-Simple authentication :this includes anonymous authentication,unauthenticated authentication and username/password authentication.
+                        it means that a username and password create a BIND request to authenticate to the LDAP server.
+
+-SASL Authentication :The Simple Authentication and Security Layer(SASL) framework uses other authentication services,such as kerberous,to bind the LDAP server and then uses this authentication service to authenticate to LDAP.
+                      SASL can provice additional security due to the separation of authentication methods from application protocols.
+
+LDAP authentication messages are sent in cleartext by default so anyone can sniff out LDAP messages on the internal network.
+

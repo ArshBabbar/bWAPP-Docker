@@ -1,0 +1,23 @@
+Evidence acquisition is a critical phase in digital forensics, involving the collection of digital artifacts and data from various sources to preserve potential evidence for analysis. Evidence acquisition is a critical phase in digital forensics, involving the collection of digital artifacts and data from various sources to preserve potential evidence for analysis.
+
+Here's an overview of evidence acquisition techniques commonly used in digital forensics:
+
+Forensic Imaging
+Extracting Host-based Evidence & Rapid Triage
+Extracting Network Evidence
+
+__________________________________
+Forensic Imaging
+
+Forensic imaging is a fundamental process in digital forensics that involves creating an exact, bit-by-bit copy of digital storage media, such as hard drives, solid-state drives, USB drives, and memory cards.
+Below are some forensic imaging tools and solutions:
+
+1.FTK Imager: Developed by AccessData (now acquired by Exterro), FTK Imager is one of the most widely used disk imaging tools in the cybersecurity field.
+
+2.AFF4 Imager: A free, open-source tool crafted for creating and duplicating forensic disk images.
+
+3.DD and DCFLDD: Both are command-line utilities available on Unix-based systems (including Linux and MacOS).
+
+4.Virtualization Tools: Given the prevalent use of virtualization in modern systems, incident responders will often need to collect evidence from virtual environments.
+
+__________________________________

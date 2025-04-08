@@ -1,0 +1,59 @@
+_______________
+Different Types of Accouts are :
+
+1.Local Accounts:
+
+Local Accounts are stored locally on a particular server or workstation.
+Several default local user accounts are:
+
+Administrator:this Accounts has the SID s-1-5-domain-500 and is the first account created with a new Windows installation.
+              full controll over almost every resource on the system.
+              cannot be deleted or locked but can be disabled or renamed.
+
+Guest:this account is disabled by default.
+      Allow users without an account to log in temporarily with limited access rights.
+
+SYSTEM:the SYSTEM(or NT AUTHORITY\SYSTEM)account on a Windows host is the default account installed and used by the OS to perform many of its internal functions.
+       Unlike Root on Linux,SYSTEM is a service account and does not run entirely in the same context as regular user.
+       it have the highest permission level and it is granted FULL Controll permissions to all files on system.
+
+Network Service:predefined local account used by the Service Control Manager (SCM) for running windows services.
+
+Local Services: predefined account used by the SCM for running Windows services.
+                present with minimal privileges on the computer and presents anonymous credentials to the network.
+        
+2.Domain Users:
+
+These are granted rights from the domain to access resources such as file servers,printers,internet hosts and other objects based on permissions.
+Domain user accounts can log in to any host in the domain.
+important account --- KRBTGT ---
+
+_______________
+User Naming Attributes:
+
+Few important Naming attributes in AD are:
+
+(UPN)UserPrincipleName: logon name,the UPN uses the email address of the user.
+
+ObjectGUID:Unique identifier of the user.
+
+SAMAccountName:logon name that supports the previous version of windows clients and servers.
+
+objectSID:user's security identifier(SID)
+
+sIDHistory:contains previous SIDs for the user object if moved.
+
+_______________
+Domain-joined vs Non-Domain-joined Machines
+
+Domain-joined:
+
+hosts have greater ease of information sharing within the enterprise and a centeral management point(the DC)to gather resources,policies and updates form.
+
+Non-Domain-joined:
+
+these are not managed by domain policy.sharing resources outside your local network is much more complicated then it would be on a domain.
+advantage being individual users are in charge of any changes they wish to make to their hosts.
+
+machince account(NT AUTHORITY\SYSTEM level access)in an AD env will have most of the same rights as a standard domain user accounts.
+

@@ -1,0 +1,32 @@
+When the investigation is complete and we have understood the type of incident and the impact on the business (based on all the leads gathered and the information assembled in the timeline),
+it is time to enter the containment stage to prevent the incident from causing more damage.
+
+Containment
+
+ we take action to prevent the spread of the incident.
+ We divide the actions into short-term containment and long-term containment. 
+
+
+In short-term containment,
+ the actions taken leave a minimal footprint on the systems on which they occur. Some of these actions can include, placing a system in a separate/isolated VLAN, pulling the network cable out of the system(s) or modifying the attacker's C2 DNS name to a system under our control or to a non-existing one.
+
+In long-term containment actions,
+we focus on persistent actions and changes. These can include changing user passwords, applying firewall rules, inserting a host intrusion detection system, applying a system patch, and shutting down systems. 
+
+_________________________
+Eradication
+
+Once the incident is contained, eradication is necessary to eliminate both the root cause of the incident and what is left of it to ensure that the adversary is out of the systems and network. 
+we may extend the previously performed containment activities by applying additional patches, which were not immediately required. Additional system-hardening activities are often performed during the eradication stage
+
+
+_________________________
+Recovery
+
+In the recovery stage, we bring systems back to normal operation. 
+ Typical suspicious events to monitor for are:
+
+Unusual logons (e.g. user or service accounts that have never logged in there before)
+Unusual processes
+Changes to the registry in locations that are usually modified by malware
+

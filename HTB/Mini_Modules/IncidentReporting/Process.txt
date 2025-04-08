@@ -1,0 +1,10 @@
+Initial Detection & Acknowledgement 
+Preliminary Analysus -scope & potential of incident
+Incident Logging - logg all changes 
+Notification of Relevant Parties :
+    Internal Communications - IT,Lefal<pr departments etc.
+    External Communications - depending on incident,customers,patners etc
+
+Detailed Investigations & Reporting 
+Final Report Creation -document with details of incident
+Feedback Loop! - Post-incident reflection

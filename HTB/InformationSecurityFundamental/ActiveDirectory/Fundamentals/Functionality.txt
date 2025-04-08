@@ -1,0 +1,43 @@
+As in Terminologies,
+there are 5 Flexible Single Master Operation (FSMO) roles :
+
+Schema Master -->this role manages the read/write copy of the AD schema,
+                 which defines all attributes that can apply to an object in AD.
+
+Domain naming master -->Manages domain names and ensures that
+                        2 domains of the same name are not name are not in same forest
+
+Relative ID(RID) Master-->assigns blocks of RIDs to other DCs within domain that can be used for new objects.
+                          RID master helps ensure that multiple objects are nt assigned same SID
+
+PDC Emulator-->the host with this role would be the authoritative DC in the domain and respond to 
+               authentication req,password changes and manage group policy objects(GPOs).
+               also maintains time within the domain.
+
+Infractructure Master-->this role translates GUIDs,SIDs and DNs between domains.
+                        role is used to organize multiple domains in a single forest.
+                        the Infractructure master helps them to communicate.
+
+Domain and Forest Functional Levels :
+
+FUNCTIONAL LEVELS DETERMINE THE VARIOUS FEATURES AND CAPABILITIES AVAILABLE IN ACTIVE DIRECTORY DOMAIN SERVICES(AD DS).
+also used to specify which Windows Server OS can run DC in a domain or forest.
+
+Trusts :
+
+a Trust is used to establish forest-forest or domain-domain authentication,allowing users to 
+access resources in another domain outside of the domain their resides in.
+
+Type of Trust :
+
+Parent-child -->Domains withis same forest.The child domain has a 2-way transitive trust with the parent domain.
+
+Cross-Link -->a trust between child domains to spped up authentication
+
+External -->a non-transitive trusst between 2 seprate domains in seprate forests which are not already joined by a forest trust.
+
+Tree-root -->a 2-way transitive trust between a forest root domain and a new tree root domain.
+            they are created by design when ou set up a new tree root domain within a forest.
+
+Forest -->a transitive trust between 2 forest root domains.
+

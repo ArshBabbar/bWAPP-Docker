@@ -1,0 +1,52 @@
+The essential elements of a good bug report are (the element order can vary):
+
+Vulnerability Title	        Including vulnerability type, affected domain/parameter/endpoint, impact etc.
+CWE & CVSS score	        For communicating the characteristics and severity of the vulnerability.
+Vulnerability Description	Better understanding of the vulnerability cause.
+Proof of Concept (POC)	    Steps to reproduce exploiting the identified vulnerability clearly and concisely.
+Impact	                    Elaborate more on what an attacker can achieve by fully exploiting the vulnerability. Business impact and maximum damage should be included in the impact statement.
+Remediation	                Optional in bug bounty programs, but good to have.
+
+_________________________
+Why CWE & CVSS?
+
+MITRE describes Common Weaknesses Enumeration (CWE) as a community-developed list of software and hardware weakness types.
+
+When it comes to communicating the severity of an identified vulnerability, then Common Vulnerability Scoring System (CVSS) should be used, as it is a published standard used by organizations worldwide.
+
+_________________________
+
+Base Score While Calculating CVSS:
+
+1.Attack Vector
+Shows how the vulnerability can be exploited.
+    Network (N): Attackers can only exploit this vulnerability through the network layer (remotely exploitable).
+
+    Adjacent (A): Attackers can exploit this vulnerability only if they reside in the same physical or logical network (secure VPN included).
+
+    Local (L): Attackers can exploit this vulnerability only by accessing the target system locally (e.g., keyboard, terminal, etc.) or remotely (e.g., SSH) or through user interaction.
+
+    Physical (P): Attackers can exploit this vulnerability through physical interaction/manipulation.
+
+2.Attack Complexity
+Depicts the conditions beyond the attackers' control and must be present to exploit the vulnerability successfully.
+
+3.Privileges Required
+Show the level of privileges the attacker must have to exploit the vulnerability successfully.
+
+4.User Interaction
+Shows if attackers can successfully exploit the vulnerability on their own or user interaction is required.
+
+5.Scope
+Shows if successful exploitation of the vulnerability can affect components other than the affected one.
+
+6.Confidentiality
+Shows how much the vulnerable component's confidentiality is affected upon successfully exploiting the vulnerability. Confidentiality limits information access and disclosure to authorized users only and prevents unauthorized users from accessing information.
+
+7.Integrity
+Shows how much the vulnerable component's integrity is affected upon successfully exploiting the vulnerability. Integrity refers to the trustworthiness and veracity of information.
+
+8.Availability
+Shows how much the vulnerable component's availability is affected upon successfully exploiting the vulnerability. Availability refers to the accessibility of information resources in terms of network bandwidth, disk space, processor cycles, etc.
+
+9.

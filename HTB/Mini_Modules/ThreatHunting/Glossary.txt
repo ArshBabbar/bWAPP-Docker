@@ -1,0 +1,25 @@
+Within the domain of cybersecurity and threat hunting, several crucial terms and concepts play a pivotal role.
+Here's an enriched understanding of these:
+
+1.Adversary:
+ An adversary, within the realm of Cyber Threat Intelligence (CTI), refers to an entity driven by shared objectives as your organization, albeit unauthorized, seeking to infiltrate your business and satisfy their collection requirements, which may include financial gains, insider information, or valuable intellectual property.
+ 
+ Adversaries can be classified into distinct categories, including cyber criminals, insider threats, hacktivists, or state-sponsored operators.
+
+2.Advanced Persistent Threat (APT):
+ APTs are typically associated with highly organized groups or nation-state entities that possess extensive resources, thereby enabling them to carry out their malicious activities over prolonged periods.
+
+3.Tactics, Techniques, and Procedures (TTPs):
+ A term borrowed from the military, TTPs symbolize the distinct operational patterns or 'signature' of an adversary.
+
+ 1.Tactics: This term describes the strategic objectives and high-level concepts of operations employed by the adversary. Essentially, it addresses the 'why' behind their actions.
+ 2.Techniques: These are the specific methods utilized by an adversary to accomplish their tactical objectives, providing the 'how' behind their actions. Techniques don't provide step-by-step instructions but rather describe the general approach to achieving a goal.
+ 3.Procedures: These are the granular, step-by-step instructions, essentially the 'recipe' for the implementation of each technique.
+
+4.Indicator:
+ An indicator, when analyzed in CTI, encompasses both technical data and contextual information.
+
+5.Threat:
+ A threat is a multifaceted concept, consisting of three fundamental factors, intent, capability, and opportunity.
+
+6.

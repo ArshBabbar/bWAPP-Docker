@@ -1,0 +1,32 @@
+
+Domain Users ---> Domain Computers 
+
+OU stands for organizational units (such as: computers,users domain controller etc.) ---->Domain group information
+GPO stands for group policy objectives -->Password Policy 
+ACL stands for Access control list --->Domain trusts
+Functional domain levels --->Default domain policy
+
+Basic(Simplistic) high-level view of AD Structure:
+
+INLANEFREIGHT.LOCAL/
+├── ADMIN.INLANEFREIGHT.LOCAL
+│   ├── GPOs
+│   └── OU
+│       └── EMPLOYEES
+│           ├── COMPUTERS
+│           │   └── FILE01
+│           ├── GROUPS
+│           │   └── HQ Staff
+│           └── USERS
+│               └── barbara.jones
+├── CORP.INLANEFREIGHT.LOCAL
+└── DEV.INLANEFREIGHT.LOCAL
+
+Example & Explanation:
+
+here INLANEFREIGHT is a forest with child Admim,corp,dev 
+and if a new domain example:Storm formed a link with INLANEFREIGHT 
+only storm and INLANEFREIGHT will (know each other)trust each other but not there child
+ther children wont trust each other 
+only parent trust each other and can authenticate with each other.
+

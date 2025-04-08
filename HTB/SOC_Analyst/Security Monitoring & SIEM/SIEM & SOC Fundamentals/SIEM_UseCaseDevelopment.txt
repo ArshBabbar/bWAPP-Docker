@@ -1,0 +1,55 @@
+What Is A SIEM Use Case?
+
+Utilizing SIEM use cases is a fundamental aspect of crafting a robust cybersecurity strategy, as they enable the effective identification and detection of potential security incidents.
+
+Use cases are designed to illustrate specific situations where a product or service can be applied, and they can range from general scenarios, such as failed login attempts, to more complex ones like detecting a ransomware outbreak.
+
+_____________________________
+SIEM Use Case Development Lifecycle
+
+The following critical stages must be considered when developing any use cases:
+
+1.Requirements:
+ Comprehend the purpose or necessity of the use case, pinpointing the specific scenario for which an alert or notification is needed.
+
+2.Data Points:
+ Identify all data points within the network where a user account can be used to log in.
+
+3.Log Validation:
+ Verify and validate the logs, ensuring they contain all crucial information such as user, timestamp, source, destination, machine name and application name.
+
+4.Design and Implementation:
+ After identifying and verifying all logs with different data points and sources, begin designing the use case by defining the conditions under which an alert should be triggered.
+
+5.Documentation:
+ Standard Operating Procedures (SOP) detail the standard processes analysts must follow when working on alerts.
+
+6.Onboarding:
+ Start with the development stage before moving the alert directly into the production environment.
+
+7.Periodic Update/Fine-tuning:
+ Obtain regular feedback from analysts and maintain up-to-date correlation rules by whitelisting.
+
+______________________________
+How To Build SIEM Use Cases
+
+1.Comprehend your needs, risks, and establish alerts for monitoring all necessary systems accordingly.
+
+2.Determine the priority and impact, then map the alert to the kill chain or MITRE framework.
+
+3.Establish the Time to Detection (TTD) and Time to Response (TTR) for the alert to assess the SIEM's effectiveness and analysts' performance.
+
+4.Create a Standard Operating Procedure (SOP) for managing alerts.
+
+5.Outline the process for refining alerts based on SIEM monitoring.
+
+6.Develop an Incident Response Plan (IRP) to address true positive incidents.
+
+7.Set Service Level Agreements (SLAs) and Operational Level Agreements (OLAs) between teams for handling alerts and following the IRP.
+
+8.Implement and maintain an audit process for managing alerts and incident reporting by analysts.
+
+9.Create documentation to review the logging status of machines or systems, the basis for creating alerts, and their triggering frequency.
+
+10.Establish a knowledge base document for essential information and updates to case management tools.
+

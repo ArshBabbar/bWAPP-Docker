@@ -1,0 +1,37 @@
+To start JupyterLab
+Cmd:
+jupyter lab
+
+JupyterLab is an interactive development environment that provides web-based coding, data, and visualization interfaces.
+
+Why JupyterLab?
+
+    Interactive Environment: JupyterLab allows running code in individual cells, facilitating experimentation and iterative development.
+    Data Exploration and Visualization: It integrates seamlessly with libraries like matplotlib and seaborn for creating visualizations and exploring data.
+    Documentation and Sharing: JupyterLab supports markdown and LaTeX for creating rich documentation and sharing code with others.
+
+JupyterLab can be easily installed using conda, if it isn't already installed:
+
+JupyterLab's primary component is the notebook, which allows combining code, text, and visualizations in a single document. Notebooks are organized into cells, where each cell can contain either code or markdown text.
+
+    Code cells: Execute code in various languages (Python, R, Julia).
+    Markdown cells: Create formatted text, equations, and images using markdown syntax.
+    Raw cells: Untyped raw text.
+
+Jupyter notebooks use a stateful environment, which means that variables, functions, and imports defined in one cell remain available to all later cells.
+Once you execute a cell, any changes it makes to the environment, such as assigning new variables or redefining functions, persist as long as the kernel is running.
+
+JupyterLab integrates with libraries like pandas, matplotlib, and seaborn for data exploration and visualization. 
+
+________________
+Restarting the Kernel
+
+JupyterLab uses a kernel to run your code.
+The kernel is a separate process responsible for executing code and maintaining the state of your computations.
+
+Restarting the kernel clears all variables, functions, and imported modules from memory, allowing you to start fresh without shutting down JupyterLab entirely.
+
+To restart the kernel:
+
+    Open the Kernel menu in the top toolbar.
+    Select Restart Kernel to reset the environment while preserving cell outputs, or Restart Kernel and Clear All Outputs to also remove all previously generated outputs from the notebook.

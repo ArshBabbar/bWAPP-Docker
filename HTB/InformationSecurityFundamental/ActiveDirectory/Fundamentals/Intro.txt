@@ -1,0 +1,20 @@
+Basic intro to Active Directory
+
+Active Directory is a directory service in Windows network environment 
+it is a distributed,hierarchical structure that allows for centeralized management of organizations resources(users,computerspolicies etc.)
+it provides authentication and authorization function withing windows domain environment
+it is a essential real-only database to all users withing the domain(all users can read AD )
+
+
+Some History of Active directory
+
+2021
+
+the PrintNightmare vulnerability was released.
+this was a remote code execution flaw in windows print spooler that could be used to take over host in Active Directory environment.
+
+the noPac attack allows an user to gain full control over the domain from a standard account if the conditions are met.
+
+2020
+
+the ZeroLogon attach was discovered that allow user to impersinate a domain controller in network

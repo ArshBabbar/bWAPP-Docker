@@ -1,0 +1,21 @@
+Some System Info commands are:
+
+whoami -> Displays current username
+id -> Return users identity
+hostname -> Sets or prints the name of current host System
+ |  uname -> Prints basic information about the operating system name and system hardware
+ |  uname -r ->to obtain kernel Release 
+ |  uname -a ->to obtain all info in specific order:kernel name,hostname,kernel release,kernel version,machine hardware nameand os
+pwd -> print working directory
+ifconfig -> the ifconfig utility is used to assign or to view an addess to a network interface and/or configure network interface parameters
+netstat -> shows network status
+ip -> ip is a utility used to assign or to view an address to a network interface and tunnels
+netstat -> show network status 
+ss -> Another utilit to investigate sockets
+ps -> shows process status
+who -> Displays who is logged in 
+env -> Prints environment or sets and executes command
+lsblk -> list block devices
+lsusb -> list USB devices
+lsof -> list opened files
+lspci -> list PCI devices

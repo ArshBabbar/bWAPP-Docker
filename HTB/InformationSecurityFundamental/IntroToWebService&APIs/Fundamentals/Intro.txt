@@ -1,0 +1,96 @@
+Web Services enable applications to communicate with each other.
+
+an application programming interface(API) is a set of rules that enables data transmission between different softwares.
+the technical specification of each API dictates the data exchange.
+
+_______________
+
+Web Service vs. API
+
+1.Web Services are a type of API.the opposite is not always true!!!
+
+2.Web Services need a network to achieve their objective.API can achieve their goals even offline.
+
+3.Web services rarely allow external developer access and there are a lot of APIs that welcome external developer tinkering.
+
+4.Web services usually utilize SOAP for security reasons.Apis can be found using different design,such as XML-RPC,JSON-RPC,SOAP and REST.
+
+5.Web Services usually utilize the XML format for data encoding.APIs can be found using different formats to store data,most popular being JavaScript Object Notation(JSON).
+
+_______________
+
+Web Service Approaches/Technologies
+
+Some Approaches/Technologies for providing and consuming web services are:
+
+1.XML-RPC:
+
+it uses XML for encoding/decoding the remote procedure call(RPC) and the respective parameter(s).
+HTTP is usually the transport of choice.
+
+Example:
+
+<?xml version="1.0"?>
+  <methodCall>
+    <methodName>examples.getStateName</methodName>
+    <params>
+       <param>
+ 		     <value><i4>41</i4></value>
+ 		     </param>
+		  </params>
+    </methodCall>
+
+2.JSON-RPC:
+
+it uses JSON to invoke functionality.
+HTTP is usually the transport of choice. 
+
+Example:
+
+ {"method": "sum", "params": {"a":3, "b":4}, "id":0}
+
+3.SOAP(Simple Object Access Protocol):
+
+it also uses XML but provides more functionalities than XML-RPC.
+it defines both a header structure and a payload structure.
+ The former identifies the actions that SOAP nodes are expected to take on the message, while the latter deals with the carried information.
+ A Web Services Definition Language (WSDL) declaration is optional.WSDL specifies how a SOAP service can be used.
+ Various lower-level protocols (HTTP included) can be the transport.
+
+Anatomy of a SOAP Message:
+
+--->soap:Envelope :(Regular block) Tag to differentiate SOAP from normal XML,requires a namespace attribute.
+
+--->soap:Header :(Optional block) Enables SOAP's extensibility through SOAP modules.
+
+--->soap:Body :(Required block) Contains the procedure,parameters and data.
+
+--->soap:Fault :(Optional block) Used within soap:body for error messages upon a failed API call.
+
+Example:
+
+  <?xml version = "1.0"?>
+  <SOAP-ENV:Envelope
+    xmlns:SOAP-ENV = "http://www.w3.org/2001/12/soap-envelope"
+     SOAP-ENV:encodingStyle = "http://www.w3.org/2001/12/soap-encoding">
+
+    <SOAP-ENV:Body xmlns:m = "http://www.xyz.org/quotations">
+       <m:GetQuotation>
+         <m:QuotationsName>MiscroSoft</m:QuotationsName>
+      </m:GetQuotation>
+    </SOAP-ENV:Body>
+  </SOAP-ENV:Envelope>
+  
+---_____----
+Note:
+may come across slightly different SOAP envelopes.
+
+1.WS-BPEL(Web Services Business Process Execution Language):
+
+WS-BPEL web services are essentially SOAP web services with more functionality for describing and invoking business Processes.
+these web services heavily resemble SOAP services.
+
+2.RESTful(Representational State Transfter):
+
+Rest web services usually use XML or JSON.WSDL declaration are supported but uncommon.
+HTTP us the transport of choice and HTTP verbs are used to access/change/delete resources and use data.

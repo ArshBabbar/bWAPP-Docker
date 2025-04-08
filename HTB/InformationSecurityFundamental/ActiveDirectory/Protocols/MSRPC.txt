@@ -1,0 +1,15 @@
+MSRPC is Microsoft's implementation of remote procedure call(RPC),
+an interprocess communication technique used for client-server model-based application.
+Windows uses MSRPC to access systems in AD using 4 key RPC interfaces as:
+
+1.lsarpc :a set of RPC calls to the Local Security Authority(LSA) system which manages the local security policy on a computer,controls the audit policy and provides interactive authentication services.
+         LSARPC is used to perform management on domain security policies.
+
+2.netlogon :Netlogon is a Windows process used to authenticate users and other services in the domain environment.
+            it is as ervice that continuously runs in the background.
+
+3.samr :Remote SAM(samr) provides management functionality for the domain account database, storing info about user and groups.
+        IT admins use the protocol to manage users,groups and computer by enablind admins to create,read,update and delete information about security principles.
+
+4.drsuapi : it is the Microsoft API that implements the Directory Replication Service(DRS) Remote Protocol which is used to perform replication-related tasks across Domain Controllers in a multi-DC environment.
+            

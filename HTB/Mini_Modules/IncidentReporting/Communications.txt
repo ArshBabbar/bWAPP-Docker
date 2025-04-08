@@ -1,0 +1,20 @@
+Effective Communication is crucial.
+
+Navigating Communication Channels During Cybersecurity incidents
+
+1.Security Dimensions of Communication Channels:
+[
+    Encryptions,
+    Authentication and Authorization,
+    Data Integrity,
+    Ephemeral Communication,
+    Air-Gapped Communications
+]
+Regulatory Dimensions of Communication Channels:
+[
+    Data Privacy Laws,
+    Breach Notigication Mandates,
+    Record-Keeping,
+    Cross-Border Communications,
+    Chain of Custody
+]
