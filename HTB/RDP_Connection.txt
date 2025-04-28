@@ -1,6 +1,0 @@
-Now, RDP to [Target IP] using the provided credentials, open Windows Event Viewer, and answer the questions below.
-
-CMD:
-xfreerdp /u:Administrator /p:'HTB_@cad3my_lab_W1n10_r00t!@0' /v:[Target IP] /dynamic-resolution
-
-cmd     /u-user           /p-password                       /v-IP           
