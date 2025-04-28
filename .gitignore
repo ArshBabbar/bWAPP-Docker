@@ -1,0 +1,7 @@
+# Ignore Docker volumes and system files
+*.zip
+__pycache__/
+*.log
+*.tmp
+.env
+mysql_data/
